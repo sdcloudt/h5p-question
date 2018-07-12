@@ -51,8 +51,8 @@
   display: block;
 }
 .h5p-question-image-fill-width .h5p-question-image-wrap,
-.h5p-no-frame>.h5p-question .h5p-question-image-wrap,
-.h5p-transparent>div>.h5p-question .h5p-question-image-wrap {
+.h5p-no-frame > .h5p-question .h5p-question-image-wrap,
+.h5p-transparent > div > .h5p-question .h5p-question-image-wrap {
   -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
   margin: 0;
@@ -178,8 +178,8 @@
   transition: none;
 }
 /* Remove margins when no frame or transparent */
-
-.h5p-no-frame>.h5p-question > *, .h5p-transparent > div > .h5p-question > * {
+.h5p-no-frame>.h5p-question > *,
+.h5p-transparent > div > .h5p-question > * {
   margin-left: 0 !important;
   margin-right: 0;
 }
