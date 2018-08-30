@@ -789,6 +789,19 @@ H5P.Question = (function ($, EventDispatcher, JoubelUI) {
     };
 
     /**
+     * Returns the H5P.Video instance if it is set using `setVideo`.
+     *
+     * @returns {H5P.Video} If the video is set then that instance is returned, otherwise `null`.
+     */
+    self.getVideoInstance = function (params) {
+      if (sections.video) {
+        return sections.video.instance;
+      }
+
+      return null;
+    };
+
+    /**
      * An audio player to display above the task.
      *
      * @param {object} params
@@ -811,6 +824,19 @@ H5P.Question = (function ($, EventDispatcher, JoubelUI) {
       }
 
       return self;
+    };
+
+    /**
+     * Returns the H5P.Audio instance if it is set using `setAudio`.
+     *
+     * @returns {H5P.Audio} If the audio is set then that instance is returned, otherwise `null`.
+     */
+    self.getAudioInstance = function (params) {
+      if (sections.audio) {
+        return sections.audio.instance;
+      }
+
+      return null;
     };
 
     /**
